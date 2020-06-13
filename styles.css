@@ -13,10 +13,18 @@ td.rowWithNumberInput {
 	padding: 10px 0 0 0;
 }
 
-td
 .smallNumberInput {
 	width: 100%;
 	border: none;
 	margin: 0;
+}
 
+.mainBrand {
+	border-radius: 5px;
+	color: #f9f9f9;
+}
+
+.totals {
+	background-color: #007bff;
+	color: #f9f9f9;
 }

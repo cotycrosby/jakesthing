@@ -2,25 +2,25 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jakes Thing</title>
+	<title>JC Auto Repair</title>
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <div class="container mt-5" id='app'>
-    <div class="row">
-      <div class="col-md-6">
+    <div class="row mb-3">
+      <div class="col-md-4">
         <div class="text-center">
-          <h1>JC Auto Repair</h1>
-          <p>701 Glenwood</p>
-          <p>Rossford, OH 43460</p>
-          <p>419-297-????</p>
+          <h1 class='mainBrand bg-primary'>JC Auto Repair</h1>
+          701 Glenwood <br>
+          Rossford, OH 43460 <br>
+          419-297-???? <br>
         </div>  
       </div>
-      <div class="col-md-6">
-        <input type="text" placeholder='Name' class='form-control'>
-        <input type="text" placeholder='Address' class='form-control'>
-        <input type="text" placeholder='City, State' class='form-control'>
+      <div class="col-md-8">
+        <input type="text" placeholder='Name' class='form-control mb-1'>
+        <input type="text" placeholder='Address' class='form-control mb-1'>
+        <input type="text" placeholder='City, State' class='form-control mb-1'>
       </div>
     </div>
 
@@ -50,36 +50,19 @@
             </td>
             <td class='medium'>${{row.total}}</td>
           </tr>
-
-         <!--  <tr>
-            <td contenteditable='true' class='small'></td>
-            <td contenteditable='true' class='small'></td>
-            <td contenteditable='true'></td>
-            <td contenteditable='true' class='medium'></td>
-            <td contenteditable='true' class='medium'></td>
-            <td class='medium'></td>
-          </tr>
-          <tr>
-            <td contenteditable='true' class='small'></td>
-            <td contenteditable='true' class='small'></td>
-            <td contenteditable='true'></td>
-            <td contenteditable='true' class='medium'></td>
-            <td contenteditable='true' class='medium'></td>
-            <td class='medium'></td>
-          </tr> -->
-         
+    
 
           <tr>
             <td colspan='4'>
               <button class="btn btn-primary d-print-none" v-on:click='addItem'>Add row</button>
             </td>
-            <td >Total Parts</td>
+            <td class='totals' >Total Parts</td>
             <td>${{totalParts}}</td>
           </tr>
 
           <tr>
             <td colspan='4'></td>
-            <td >Total Labor</td>
+            <td class='totals'  >Total Labor</td>
             <td>
               <input class='smallNumberInput' type="number" min='0' step='any' v-model='totalLabor'>
             </td>
@@ -87,7 +70,7 @@
 
           <tr>
             <td colspan='4'></td>
-            <td >Total</td>
+            <td class='totals' >Total</td>
             <td>{{total}} </td>
           </tr>
         </table>
@@ -95,7 +78,7 @@
 
       <div class="col-md-12">
         <h3>Notes</h3>
-        <textarea class='form-control mb-5'></textarea>
+        <p contenteditable='true' class='border border-dark p-1' style='width: 100%; min-height: 75px;'></p>
       </div>
     </div>
   </div>
