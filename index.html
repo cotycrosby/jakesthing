@@ -5,11 +5,72 @@
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1>This is Jakes thing!</h1>
+        
+        <div id="vue-root" class='mt-5'>
+          <div class="card card-body d-print-none">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <input type="text" class='form-control' placeholder='Item Name'>
+                </div>
+                <div class="col">
+                  <input type="text" class='form-control' placeholder='Item Quantity'>
+                </div>
+                <div class="col">
+                  <input type="text" class='form-control' placeholder='Item Price'>
+                </div>
+              </div>
+
+              <div class="row text-right mt-3">
+                <button class="btn btn-primary form-control">Add Item</button>
+              </div>
+            </div>
+          </div>
+
+          <h3 class='d-print-none'>Form Preview</h3>
+          <div class='card card-body'>
+            <h3>Jakes Thing</h3>
+            <table class="table table-bordered">
+              <tr class='bg-light'>
+                <th>Name</th>
+                <th>Hit the Quanity</th>
+                <th>Price</th>
+              </tr>
+
+              <tr>
+                <td>Rotors</td>
+                <td>2</td>
+                <td>
+                  $128.99
+                  <i class='btn btn-danger d-print-none'>&times;</i>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Labor</td>
+                <td>NA</td>
+                <td>
+                  $64
+                  <i class='btn btn-danger d-print-none'>&times;</i>
+                </td>
+              </tr>
+
+              <tr>
+                <td></td>
+                <td>Total:</td>
+                <td>????</td>
+              </tr>
+
+
+            </table>
+          </div>
+
+
+        </div>
+
       </div>
     </div>
   </div>
