@@ -1,0 +1,22 @@
+td.small {
+	width: 50px;
+	max-width: 50px;
+	padding: 15px 0 0 0;
+}
+
+td.medium {
+	width: 125px;
+	max-width: 125px;
+}
+
+td.rowWithNumberInput {
+	padding: 10px 0 0 0;
+}
+
+td
+.smallNumberInput {
+	width: 100%;
+	border: none;
+	margin: 0;
+
+}
