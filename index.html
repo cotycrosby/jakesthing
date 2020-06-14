@@ -14,18 +14,57 @@
           <h1 class='mainBrand bg-primary'>JC Auto Repair</h1>
           701 Glenwood <br>
           Rossford, OH 43460 <br>
-          419-297-???? <br>
+          419-297-0367 <br>
         </div>  
       </div>
       <div class="col-md-8">
-        <input type="text" placeholder='Name' class='form-control mb-1'>
-        <input type="text" placeholder='Address' class='form-control mb-1'>
-        <input type="text" placeholder='City, State' class='form-control mb-1'>
+        <input type="text" placeholder='Name' class='form-control mb-1' tabindex="1">
+        <input type="text" placeholder='Address' class='form-control mb-1' tabindex="2">
+        <input type="text" placeholder='City, State' class='form-control mb-1' tabindex="3">
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-12">
+
+        <table class="table table-bordered">
+          <tr>
+            <th colspan='4'>Customer's Information</th>
+          </tr>
+          <tr>
+            <th>Date</th>
+            <th>Year, Make, Model</th>
+            <th>Home Phone #</th>
+            <th  >Mechanics Recomendations</th>
+          </tr>
+          <tr>
+            <td>{{todaysDate}}</td>
+            <td contenteditable='true' tabindex="4"></td>
+            <td contenteditable='true' tabindex="5"></td>
+            <td contenteditable='true' rowspan='5' tabindex="12"></td>
+          </tr>
+          <tr>
+            <th>Odometer</th>
+            <th>Serial #</th>
+            <th>Cell Phone #</th>
+          </tr>
+          <tr>
+            <td contenteditable='true' tabindex="6"></td>
+            <td contenteditable='true' tabindex="7"></td>
+            <td contenteditable='true' tabindex="8"></td>
+          </tr>
+          <tr>
+            <th>License #</th>
+            <th>Motor #</th>
+            <th>Budget</th>
+          </tr>
+          <tr>
+            <td contenteditable='true' tabindex="9"></td>
+            <td contenteditable='true' tabindex="10"></td>
+            <td contenteditable='true' tabindex="11"></td>
+          </tr>
+        </table>
+        
         <table class="table table-bordered" >
           <tr>
             <th>QTY</th>
